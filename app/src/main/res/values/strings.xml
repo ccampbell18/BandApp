@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BandApp</string>
+    <string name="label_bands">Please Choose a Band:</string>
+    <string name="label_quantity">Please Choose Quantity:</string>
+    <string name = "label_snacks">Snacks: </string>
+    <string name = "label_payment">Payment type:</string>
+    <string name = "label_personal">Personal Information:</string>
+
+    <string name="txtTickets">Ticket Quantity</string>
+    <string name="submit">Submit</string>
+    <string name ="stop">Stop</string>
+    <string name = "firstName">First Name</string>
+    <string name = "lastName">Last Name</string>
+    <string name = "eMail">E-Mail</string>
+
+    <string name = "snack1">Peanuts</string>
+    <string name = "snack2">Chips</string>
+    <string name = "snack3">Popcorn</string>
+    <string name = "snack4">Ice Cream</string>
+    <string name = "snack5">Snickers</string>
+
+    <string name = "radio_cash">Cash</string>
+    <string name = "radio_credit">Credit</string>
+    <string name = "radio_check">Check</string>
+    <string-array name="band_array">
+        <item>Blink 182</item>
+        <item>Radiohead</item>
+        <item>Haken</item>
+    </string-array>
+</resources>

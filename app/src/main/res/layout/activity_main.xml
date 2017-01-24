@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.charl.bandapp.MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/totalView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_band"
+        android:entries="@array/band_array"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/lblBand"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtTickets"
+        android:textSize="18sp"
+        android:hint="@string/txtTickets"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/lblQuantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/background_light" />
+
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:ems="10"
+    android:id="@+id/txtFirstName"
+    android:textSize="18sp"
+    android:hint="@string/firstName"
+    android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/lblPersonal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/txtLastName"
+        android:textSize="18sp"
+        android:hint="@string/lastName"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtEmail"
+        android:textSize="18sp"
+        android:hint="@string/eMail"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="11dp"
+        android:textColor="@android:color/background_light"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/txtLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <CheckBox
+        android:text="@string/snack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSnacks"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/chkPeanuts" />
+
+    <CheckBox
+        android:text="@string/snack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkChips"
+        android:layout_below="@+id/chkPeanuts"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="@string/snack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkChips"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/chkPop" />
+
+    <CheckBox
+        android:text="@string/snack4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chkPeanuts"
+        android:layout_toRightOf="@+id/lblQuantity"
+        android:layout_toEndOf="@+id/lblQuantity"
+        android:id="@+id/chkIceCream" />
+
+    <CheckBox
+        android:text="@string/snack5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkSnickers"
+        android:layout_below="@+id/chkIceCream"
+        android:layout_alignLeft="@+id/chkIceCream"
+        android:layout_alignStart="@+id/chkIceCream" />
+
+
+    <RadioGroup android:id="@+id/payments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lblPayment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <RadioButton
+        android:text="@string/radio_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdCash" />
+
+        <RadioButton
+        android:text="@string/radio_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdCredit" />
+
+        <RadioButton
+    android:text="@string/radio_check"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rdCheck" />
+</RadioGroup>
+
+    <Button
+        android:text="@string/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        tools:text="@string/submit"
+        android:onClick ="sendInfo"
+        android:layout_below="@+id/payments"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/label_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/lblPayment"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_below="@+id/chkPop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/label_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPersonal"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/txtTickets"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/label_bands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblBand"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:text="@string/label_snacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSnacks"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/label_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblQuantity"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/spinner_band"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+</ScrollView>
